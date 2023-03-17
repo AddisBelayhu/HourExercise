@@ -22,7 +22,7 @@ body{
     border-right: 0.5px solid #fff;
     border-top: 0.5px solid #fff;
     border-radius: 8px;
-    left: 5px;
+    left: 350px;
     z-index: 1;
     border-radius: 50%;
     backdrop-filter: none;
@@ -45,7 +45,7 @@ body{
     background: linear-gradient(#2196f3, #31ff38);
 }
 
-.squre:nth-child(2){
+.squre:nth-child(3){
     width: 50px;
     height: 50px;
     left: 43%;
@@ -67,7 +67,9 @@ body{
     border-right: 0.5px solid #fff;
     border-radius: 50% 50% 50% 50%;
     background: rgba(255, 255, 255, 0.01);
-    box-shadow: 30px 30px 30px -10px rgba(0, 0, 0, 0.01);
+    box-shadow: 30px 30px 30px -10px rgba(0, 0, 0, 0.01),
+    inset 14px 15px 10px
+    rgba(255, 255, 255, 0.01)
 }
 
 .dot{
@@ -93,9 +95,9 @@ body{
     border-radius: 50%;
     border-bottom: 0.5px solid #fff;
     border-right: 0.5px solid #fff;
-    background: grba(255, 255, 255, 0.01);
-    box-shadow: 5px 5px 15px grba(255, 255, 255, 0.01);
-    inset: 5px 2px 5px rgba(255, 255, 255, 0.01);
+    background: rgba(255, 255, 255, 0.01);
+    box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.01),
+    inset 5px 2px 5px rgba(255, 255, 255, 0.01);
 }
 
 .clock .numbers span{
@@ -104,7 +106,7 @@ body{
     text-align: center;
     font-size: 1.25em;
     color: #fff;
-    transform: rotate(90deg * var(--i));
+    transform: rotate(calc(90deg * var(--i)));
 }
 
 .clock .numbers span b{
@@ -135,11 +137,11 @@ body{
     transform: scaleY(0.66);
 }
 
-.clock .numbers .circle#h i{
+.clock .numbers .circle#m i{
     transform: scaleY(0.77);
 }
 
-.clock .numbers .circle#m i{
+.clock .numbers .circle#s i{
     transform: scaleY(0.82);
     width: 2px;
     height: 50%;
@@ -147,7 +149,7 @@ body{
     box-shadow: 0 30px 0 #e91e63;
 }
 
-.clock::before{
+.clock:before{
     content: "";
     position: absolute;
     width: 4px;
