@@ -11,6 +11,6 @@ setInterval(()=>{
     let ss = day.getSeconds() * 6;
 
     hrs.style.transform = `rotateZ(${hh+(mm/12)}deg)`;
-    mns.style.transform = `rotateZ(${mm}deg)`;
+    min.style.transform = `rotateZ(${mm}deg)`;
     scs.style.transform = `rotateZ(${ss}deg)`;
 })
